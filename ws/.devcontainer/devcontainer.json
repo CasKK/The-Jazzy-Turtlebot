@@ -1,6 +1,6 @@
 {
   "name": "Jazzy Turtlebot",
-  "build": { "dockerfile": "Dockerfile", "context": "." },
+  "build": { "dockerfile": "../Dockerfile", "context": ".." },
 
   "workspaceMount": "source=${localWorkspaceFolder},target=/ws,type=bind",
   "workspaceFolder": "/ws",
