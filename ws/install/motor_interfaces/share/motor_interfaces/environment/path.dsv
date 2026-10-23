@@ -1,1 +1,1 @@
-prepend-non-duplicate-if-exists;PATH;bin
+/ws/build/motor_interfaces/ament_cmake_environment_hooks/path.dsv

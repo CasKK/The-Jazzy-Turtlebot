@@ -1,3 +1,1 @@
-uint8 id
-string command_type
-float64 value
+/ws/src/motor_interfaces/msg/MotorCommand.msg
