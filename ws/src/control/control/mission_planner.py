@@ -17,7 +17,7 @@ class PythonNode(Node):
 
 
     def mission_loop(self):
-        self.get_logger().info(f"Mission Loop {time.time}")
+        self.get_logger().info(f"Mission Loop {time.time()}")
         msg = String()
         msg.data = f"Mission Loop {time.time}"
         self.tca_scanner_pub.publish(msg)

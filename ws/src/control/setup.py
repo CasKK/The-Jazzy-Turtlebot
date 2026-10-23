@@ -25,7 +25,7 @@ setup(
     entry_points={
         'console_scripts': [
             'motor_driver = control.motor_driver:main',
-            'python_node = Mission_planner.python_node:main'
+            'mission_planner = control.mission_planner:main'
         ],
     },
 )
