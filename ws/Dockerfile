@@ -9,6 +9,8 @@ RUN apt-get update && apt-get install -y \
     python3-colcon-common-extensions \
     ros-jazzy-std-msgs \
     ros-jazzy-ament-index-python \
+    ros-jazzy-joy \
+    ros-jazzy-sensor-msgs \
     && rm -rf /var/lib/apt/lists/*
 
 # Ubuntu 24.04 blocks system-wide pip without this flag
