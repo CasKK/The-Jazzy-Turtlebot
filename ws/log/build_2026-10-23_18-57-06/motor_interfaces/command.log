@@ -1,0 +1,4 @@
+Invoking command in '/ws/build/motor_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ws/install/control:/opt/ros/jazzy /usr/bin/cmake --build /ws/build/motor_interfaces -- -j12 -l12
+Invoked command in '/ws/build/motor_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ws/install/control:/opt/ros/jazzy /usr/bin/cmake --build /ws/build/motor_interfaces -- -j12 -l12
+Invoking command in '/ws/build/motor_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ws/install/control:/opt/ros/jazzy /usr/bin/cmake --install /ws/build/motor_interfaces
+Invoked command in '/ws/build/motor_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ws/install/control:/opt/ros/jazzy /usr/bin/cmake --install /ws/build/motor_interfaces

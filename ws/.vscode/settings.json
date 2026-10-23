@@ -1,0 +1,7 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/ws/install/motor_interfaces/lib/python3.12/site-packages",
+        "/ws/install/control/lib/python3.12/site-packages",
+        "/opt/ros/jazzy/lib/python3.12/site-packages"
+    ]
+}
