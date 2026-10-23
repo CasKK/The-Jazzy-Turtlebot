@@ -1,1 +1,0 @@
-/ws/build/motor_interfaces/rosidl_generator_c/motor_interfaces/msg/detail/motor_command__functions.h

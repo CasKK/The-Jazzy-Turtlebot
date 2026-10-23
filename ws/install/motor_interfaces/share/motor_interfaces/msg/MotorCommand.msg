@@ -1,1 +1,0 @@
-/ws/src/motor_interfaces/msg/MotorCommand.msg

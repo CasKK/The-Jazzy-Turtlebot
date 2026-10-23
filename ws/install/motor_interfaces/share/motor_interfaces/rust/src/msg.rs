@@ -1,1 +1,0 @@
-/ws/build/motor_interfaces/rosidl_generator_rs/motor_interfaces/rust/src/msg.rs
