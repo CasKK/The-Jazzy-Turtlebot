@@ -26,6 +26,7 @@ setup(
         'console_scripts': [
             'motor_driver = control.motor_driver:main',
             'mission_planner = control.mission_planner:main'
+            'teleop = control.teleop:main'
         ],
     },
 )
