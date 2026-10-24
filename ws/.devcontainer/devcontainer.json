@@ -5,10 +5,15 @@
   "workspaceMount": "source=${localWorkspaceFolder},target=/ws,type=bind",
   "workspaceFolder": "/ws",
 
-  "runArgs": ["--network=host"],
-
+  "runArgs": [
+    "--network=host",
+    "--device=/dev/dri",
+    "--device-cgroup-rule=c 13:* rmw"
+  ],
   "mounts": [
-    "source=/tmp/.X11-unix,target=/tmp/.X11-unix,type=bind"
+    "source=/tmp/.X11-unix,target=/tmp/.X11-unix,type=bind",
+    "source=/dev/input,target=/dev/input,type=bind",
+    "source=/run/udev,target=/run/udev,type=bind,readonly"
   ],
 
   "containerEnv": {

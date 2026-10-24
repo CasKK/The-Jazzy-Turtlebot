@@ -4,12 +4,12 @@ from launch_ros.actions import Node
 
 def generate_launch_description():
 
-    motor_driver_node = Node(
-        package='control',
-        executable='motor_driver',
-        name='motor_driver',
-        output='screen'
-    )
+    # motor_driver_node = Node(
+    #     package='control',
+    #     executable='motor_driver',
+    #     name='motor_driver',
+    #     output='screen'
+    # )
 
     teleop_node = Node(
             package='control',
@@ -28,7 +28,7 @@ def generate_launch_description():
 
     return LaunchDescription([
         teleop_node,
-        motor_driver_node,
+        # motor_driver_node,
         joy_node
     ])
 
