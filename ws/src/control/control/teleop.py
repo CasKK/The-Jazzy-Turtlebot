@@ -7,7 +7,7 @@ import time
 class Teleop(Node):
     def __init__(self):
         super().__init__("teleop")
-        lastTime = time.time()
+        self.lastTime = time.time()
         self.pub = self.create_publisher(MotorCommand, "motor_cmd", 10)
         self.create_subscription(Joy, "joy", self.on_joy, 10)
 
@@ -23,7 +23,8 @@ class Teleop(Node):
         b = msg.buttons     # list of ints, 0 or 1
 
         # ---- wire inputs to motors here ----
-        if time.time() >= lastTime + 0.1:
+        if time.time() >= self.lastTime + 0.1:
+            self.lastTime = time.time()
             if not b[10]:
                 self.send(1, "velocity", a[1] * 10.0 * (1-a[0]*0.1))
                 self.send(2, "velocity", a[1] * 10.0 * (1-a[0]*0.1))
@@ -46,7 +47,6 @@ class Teleop(Node):
                 self.send(8, "position", 1)
                 self.send(9, "position", -1)
                 self.send(10, "position", -1)
-            lastTime = time.time()
 
 
 
