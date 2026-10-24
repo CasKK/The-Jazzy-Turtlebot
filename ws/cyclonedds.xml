@@ -9,9 +9,10 @@
     </General>
     <Discovery>
       <ParticipantIndex>auto</ParticipantIndex>
-      <Peers>
-        <Peer address="${PEER_IP}" />
-      </Peers>
+        <Peers>
+          <Peer address="localhost" />
+          <Peer address="${PEER_IP}" />
+        </Peers>
     </Discovery>
   </Domain>
 </CycloneDDS>

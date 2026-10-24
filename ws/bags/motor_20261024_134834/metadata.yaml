@@ -1,0 +1,30 @@
+rosbag2_bagfile_information:
+  version: 9
+  storage_identifier: sqlite3
+  duration:
+    nanoseconds: 5486265098
+  starting_time:
+    nanoseconds_since_epoch: 1792849714320879945
+  message_count: 535
+  topics_with_message_count:
+    - topic_metadata:
+        name: /motor_cmd
+        type: motor_interfaces/msg/MotorCommand
+        serialization_format: cdr
+        offered_qos_profiles:
+          []
+        type_description_hash: ""
+      message_count: 535
+  compression_format: ""
+  compression_mode: ""
+  relative_file_paths:
+    - motor_20261024_134834_0.db3
+  files:
+    - path: motor_20261024_134834_0.db3
+      starting_time:
+        nanoseconds_since_epoch: 1792849714320879945
+      duration:
+        nanoseconds: 5486265098
+      message_count: 1070
+  custom_data: ~
+  ros_distro: jazzy
