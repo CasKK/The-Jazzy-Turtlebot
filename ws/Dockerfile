@@ -11,6 +11,10 @@ RUN apt-get update && apt-get install -y \
     ros-jazzy-ament-index-python \
     ros-jazzy-joy \
     ros-jazzy-sensor-msgs \
+    ros-jazzy-rmw-cyclonedds-cpp \
+    ros-jazzy-rviz2 \
+    ros-jazzy-v4l2-camera \
+    ros-jazzy-image-transport-plugins \
     && rm -rf /var/lib/apt/lists/*
 
 # Ubuntu 24.04 blocks system-wide pip without this flag
@@ -19,6 +23,8 @@ RUN pip3 install --no-cache-dir --break-system-packages feetech-servo-sdk
 ENV DISPLAY=:0
 ENV QT_X11_NO_MITSHM=1
 ENV ROS_DOMAIN_ID=7
+ENV RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
+ENV CYCLONEDDS_URI=file:///ws/cyclonedds.xml
 
 RUN echo "source /opt/ros/jazzy/setup.bash" >> /root/.bashrc && \
     echo '[ -f /ws/install/setup.bash ] && source /ws/install/setup.bash' >> /root/.bashrc

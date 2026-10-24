@@ -5,15 +5,17 @@
   "workspaceMount": "source=${localWorkspaceFolder},target=/ws,type=bind",
   "workspaceFolder": "/ws",
 
-  "runArgs": [
-    "--network=host",
-    "--device=/dev/ttyACM0"
-  ],
+  "runArgs": ["--network=host"],
 
   "mounts": [
     "source=/tmp/.X11-unix,target=/tmp/.X11-unix,type=bind"
   ],
-  "containerEnv": { "DISPLAY": "${localEnv:DISPLAY}" },
+
+  "containerEnv": {
+    "DISPLAY": "${localEnv:DISPLAY}",
+    "DDS_IFACE": "wlp82s0",
+    "PEER_IP": "10.42.0.1"
+  },
 
   "customizations": {
     "vscode": {
