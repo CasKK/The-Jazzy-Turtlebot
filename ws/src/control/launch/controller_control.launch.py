@@ -18,9 +18,18 @@ def generate_launch_description():
             output='screen'
     )
 
+
+    joy_node = Node(
+            package='joy',
+            executable='joy_node',
+            name='joy_node',
+            output='screen'
+    )
+
     return LaunchDescription([
         teleop_node,
-        motor_driver_node
+        motor_driver_node,
+        joy_node
     ])
 
 

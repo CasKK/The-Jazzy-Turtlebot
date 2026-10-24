@@ -11,6 +11,8 @@ class Teleop(Node):
         self.pub = self.create_publisher(MotorCommand, "motor_cmd", 10)
         self.create_subscription(Joy, "joy", self.on_joy, 10)
 
+        self.get_logger().info(f"teleop Loop {time.time()}")
+
     def send(self, mid, command_type, value):
         m = MotorCommand()
         m.id = mid
@@ -23,6 +25,7 @@ class Teleop(Node):
         b = msg.buttons     # list of ints, 0 or 1
 
         # ---- wire inputs to motors here ----
+        self.get_logger().info(f"teleop Loop {time.time()}")
         if time.time() >= self.lastTime + 0.1:
             self.lastTime = time.time()
             if not b[10]:
